@@ -3,7 +3,7 @@
     padding-bottom: 2.5rem;
 
     @mixin atSmall {
-        padding-left: 94px;
+        padding-left: 0px;
     }
  
     &__icon {
@@ -13,6 +13,7 @@
         @mixin atSmall {
             position: absolute;
             left: 0;
+            transform: translateY(-45%);
         }
        
     }
@@ -25,6 +26,7 @@
         margin-bottom: .8rem;
 
         @mixin atSmall {
+            padding-left: 94px;
             text-align: left;
             margin-top: 1em;
             font-size: 1.875rem;

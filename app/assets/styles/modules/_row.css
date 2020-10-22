@@ -3,11 +3,11 @@
     @mixin clearfix;
 
     &--gutters {
-        margin-right: -65px;
+        margin-right: -35px;
       }
 
     &--gutters > div {
-        padding-right: 65px;
+        padding-right: 35px;
       }
 
     &__b-margin-until-medium {
