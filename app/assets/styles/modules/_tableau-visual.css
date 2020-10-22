@@ -1,0 +1,7 @@
+.tableau-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.0rem;
+    margin-bottom: 1.0rem;
+}
