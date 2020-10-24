@@ -13,9 +13,8 @@
         @mixin atSmall {
             position: absolute;
             left: 0;
-            transform: translateY(-45%);
+            transform: translateY(-35%);
         }
-       
     }
 
     &__title {
@@ -23,13 +22,13 @@
         font-weight: 300;
         text-align: center;
         margin-top: .7em;
-        margin-bottom: .8rem;
+        margin-bottom: 1.1rem;
 
         @mixin atSmall {
-            padding-left: 94px;
+            padding-left: 90px;
             text-align: left;
             margin-top: 1em;
-            font-size: 1.875rem;
+            font-size: 1.775rem;
         }
     }
 }

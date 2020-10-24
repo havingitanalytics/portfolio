@@ -16,4 +16,8 @@
     p a {
         font-weight: 700;
     }
+
+    &--first-p {
+        margin-bottom: 3.1rem;
+    }
 }

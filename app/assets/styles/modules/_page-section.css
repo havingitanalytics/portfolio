@@ -4,6 +4,10 @@
   @mixin atMedium {
     padding: 4.5rem 0;
     }
+
+    @mixin atLarge {
+      padding: 4.5rem 0;
+      }
   
   &--no-b-padding-until-medium {
     padding-bottom:0;
@@ -27,7 +31,7 @@
   &--quotes {
        background-color: #e0e6ef;
 
-    @mixin atMedium {
+    @mixin atLarge {
       background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
       background-size: cover;
     }
