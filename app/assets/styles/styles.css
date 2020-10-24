@@ -11,5 +11,8 @@
 @import 'modules/_generic-content-container';
 @import 'modules/_section-title';
 @import 'modules/_feature-item';
-@import 'modules/_tableau-visual.css';
-@import 'modules/_quote.css';
+@import 'modules/_tableau-visual';
+@import 'modules/_quote';
+@import 'modules/_site-footer';
+@import 'modules/_site-header';
+@import 'modules/_primary-nav';
