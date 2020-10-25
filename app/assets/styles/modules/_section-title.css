@@ -4,7 +4,7 @@
     text-align: center;
 
     @mixin atSmall {
-        font-size: 2.75rem;
+        font-size: 2.675rem;
     }
 
     &--blue {
