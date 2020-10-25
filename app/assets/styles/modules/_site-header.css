@@ -3,20 +3,79 @@
   position: absolute;
   width: 100%;
   z-index: 2;
-  background-color: rgba($mainBlue, .3);  /*postcss hexrgba installed to work these syntax*/ 
+  transition: background-color .3s ease-out;
+
+  &--is-expanded {
+    background-color: rgba($mainBlue, .55);
+  }
+
+  @mixin atMedium {
+     background-color: rgba($mainBlue, .3);  /*postcss hexrgba installed to work these syntax*/ 
+  }
 
   &__btn-container {
-     float: right; 
+     @mixin atMedium {
+      float: right; 
+     }
   }
 
   &__logo {
     position: absolute;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(.8);
     background-color: black;
-    border-radius: 40px;
+    border-radius: 20px;
     overflow: hidden;
-    width: 120px;
-    height: 120px;
+    width: 65px;
+    height: 65px;
     margin: 0 auto -40px auto;
+
+    @mixin atMedium {
+      left: auto;
+      transform: translateX(0);
+      border-radius: 40px;
+      overflow: hidden;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto -40px auto;
+    }
+  }
+
+  &__menu-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    position: absolute;
+    z-index: 10;  /*to send it to front*/
+    top: 10px;
+    right: 10px;
+
+    @mixin atMedium {
+      display: none;
+      }
+    }
+
+  &__menu-content {
+    opacity: 0;    /*to add fade effect*/
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+    position: relative;  /*to acknowledge the z-index value*/
+    z-index: -10;  /*to make sure is not present and clickable and invisible*/
+    padding-top: 55px;
+    text-align: center;
+
+    @mixin atMedium {
+      opacity: 1;
+      z-index: 1;
+      padding-top: 0;
+      transform: scale(1);
+    }
+
+    &--is-visible {
+      opacity: 1;  /*to add fade effect*/
+      z-index: 1;
+      transform: scale(1);
+    }
   }
 }
