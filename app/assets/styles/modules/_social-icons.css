@@ -1,0 +1,23 @@
+.social-icons {
+    text-align: center;
+
+    &__icon {
+        display: inline-block;
+        width: 122px;
+        height: 122px;
+        margin: 0 5px 5px 5px;
+        position: relative;
+
+        @mixin atSmall {
+            width: 122px;
+        }
+
+        img {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-100%);
+        }
+    }
+}
