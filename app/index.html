@@ -32,9 +32,9 @@
        </div>
       <nav class = "primary-nav primary-nav--pull-right">
        <ul>
-        <li><a href="#Apresentação">apresentação</a></li>
-        <li><a href="#Visualizações">visualizações</a></li>
-        <li><a href="#Referências">referências</a></li>
+        <li><a href="#Início" id="Início-link">Início</a></li>
+        <li><a href="#Projectos" id="Projectos-link">Projectos</a></li>
+        <li><a href="#Referências" id="Referências-link">Referências</a></li>
        </ul>
       </nav>
     </div>
@@ -59,14 +59,15 @@
            <div class = "wrapper"> <!--add spacing on the edges in this <div section-->
              <h1 class = "large-hero__title">having it analytics</h1>
              <h2 class = "large-hero__subtitle">clear visuals</h2>
-             <p><a href="#Visualizações" class = "btn btn--orange btn--large">COVID-19</a></p>
+             <p><a href="#Projectos" class = "btn btn--orange btn--large" data-matching-link="#Projectos-link">COVID-19</a></p>
              <p class = "large-hero__description">the ability to build advanced analytics with powerful insights.</p>
            </div>
       </div>
   </div>
   <!--section to define the beginning slogan-->
 
-  <div id="Apresentação" class = "page-section">
+  <div id="Início" class = "page-section" data-matching-link="#Início-link">
+
       <div class = "wrapper">
         <h2 class = "headline headline--centered headline--light headline--b-margin-small" >A análise e visualização de dados <strong>fazem parte de nós.</strong></h2>
         <h3 class = "headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">A nossa especialidade é estruturar e preparar dados <strong>para serem visualizados de uma forma clara</strong>.</h3>
@@ -90,38 +91,36 @@
               <source sizes = "382px" srcset = "assets/images/run382.jpg 382w" media = "(min-width: 800px)">    
               <img srcset = "assets/images/run800.jpg 800w, assets/images/run1600.jpg 1600w" alt ="small picture">  
             </picture>
-
           </div>
-          <div class = "row__medium-8 row__medium-8--smaller">
 
+          <div class = "row__medium-8 row__medium-8--smaller">
             <div class = "generic-content-container">
                <h2 class = "headline headline--no-t-margin">Apresentação&hellip;</h2>
                <p>Bem vindo ao <strong>having it analytics</strong>, the ability to identify and capture the data requirements to build advanced analytics with powerful insights. Pretendemos com este site partilhar <strong>análise e visualização de dados</strong> a partir de algumas ferramentas (<strong>RStudio, Tableau, Power BI</strong>) e demonstrar, pelo design do próprio site, conhecimento e capacidades na área de <strong>Web Development</strong> (Git, HTML, CSS, Javascript).</p>
                <p>Com o avanço da tecnologia, a <strong>análise e visualização de dados</strong> começa a ocorrer em tempo real. Por isso, à medida que a visualização de dados se tornar mais acessível, esta permitirá que as pessoas explorem os seus dados de uma forma cada vez <strong>mais fácil, intuitiva e imediata.</strong></p>
                <p>Um dos maiores desafios nos próximos anos é perceber que as pessoas e as empresas precisam de novas ferramentas e, provavelmente, ferramentas personalizadas que realmente as ajudem a <strong>compreender</strong> os seus próprios dados.</strong></p>
             </div>
-
           </div> 
-          <!--to make sure the next section will not overlap the 2 column layout see mixin clearfix code-->
         </div>
       </div>
-  </div>
-
-  <div id="Visualizações" class = "page-section page-section--blue">
+    </div>
+  
+  <div id="Projectos" class = "page-section page-section--blue" data-matching-link="#Projectos-link">
     <div class = "wrapper">
         
         <h2 class = "section-title"> 
            <img class = "section-title__icon" src="assets/images/icons/analytics-graph.svg" width="70px" height="70px">
         Análise de dados</h2>
       
-        <div class = "generic-content-container generic-content-container--first-p">
-
-        <p><strong>Os dados analisados</strong> referem-se à <strong>evolução da doença Covid-19 em Portugal</strong>, provocada pelo contágio do vírus SARS-CoV2 obtidos na informação disponibilizada pela Direcção Geral de Saúde - Ministério da Saúde Português, através do dashboard do COVID-19 (<a href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/">aqui</a>) 
-          e da base de dados da ESRI Portugal (<a href="https://esriportugal.maps.arcgis.com/home/item.html?id=803d4c90bbb04c03999e65e5ce411cf8#data">aqui</a>).
-          Os dados referentes a outros países foram obtidos no site EU Open Data Portal (<a href="https://data.europa.eu/euodp/en/data/dataset/covid-19-coronavirus-data">aqui</a>)</p>
+        <div class = "feature-item">
+          <div class = "generic-content-container">
+            <p><strong>Os dados analisados</strong> referem-se à <strong>evolução da doença Covid-19 em Portugal</strong>, provocada pelo contágio do vírus SARS-CoV2 obtidos na informação disponibilizada pela Direcção Geral de Saúde - Ministério da Saúde Português, através do dashboard do COVID-19 (<a href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/">aqui</a>) 
+            e da base de dados da ESRI Portugal (<a href="https://esriportugal.maps.arcgis.com/home/item.html?id=803d4c90bbb04c03999e65e5ce411cf8#data">aqui</a>).
+            Os dados referentes a outros países foram obtidos no site EU Open Data Portal (<a href="https://data.europa.eu/euodp/en/data/dataset/covid-19-coronavirus-data">aqui</a>)</p>
+          </div>
         </div>
 
-    <div class = "generic-content-container">
+        <div class = "generic-content-container">
         <!--first item-->
         <div class = "feature-item">
           <img class = "feature-item__icon" src="assets/images/icons/analytics-paper.svg" width="70px" height="70px">
@@ -198,7 +197,7 @@
    </div>
   </div>
 <!--quotes section-->
-  <div id="Referências" class="page-section page-section--no-b-padding-until-large page-section--quotes">
+  <div id="Referências" class="page-section page-section--no-b-padding-until-large page-section--quotes" data-matching-link="#Referências-link">
     <div class = "wrapper wrapper--no-padding-until-large">
        
        <h2 class = "section-title section-title--blue">
@@ -247,7 +246,7 @@
 
   <footer class = "site-footer">
     <div class = "wrapper">
-    <p><span class="site-footer__text">2020 Design by having it analytics. All rights reserved.</span> <a href="#" class = "btn btn--orange">Menu inicial</a></p>
+    <p><span class="site-footer__text">2020 Design by having it analytics. All rights reserved.</span> <a href="#top" class = "btn btn--orange">Topo Página</a></p>
     </div>
   </footer>
   <!-- Leave this commented out HTML here until you need it for an upcoming "modal" lesson
