@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/havingitanalytics/portfolio#readme",
   "dependencies": {
+    "lazysizes": "^5.1.2",
     "lodash": "^4.17.15",
     "normalize.css": "^8.0.1"
   },

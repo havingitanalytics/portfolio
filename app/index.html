@@ -73,7 +73,7 @@
         <h3 class = "headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">A nossa especialidade é estruturar e preparar dados <strong>para serem visualizados de uma forma clara</strong>.</h3>
         <!--insert here first R graph-->
         <div class = "wrapper wrapper--medium wrapper--b-margin">
-           <img sizes = "(min-width: 984px) 990px, 100vx" srcset="
+           <img class = "lazyload" sizes = "(min-width: 984px) 990px, 100vx" data-srcset="
                         assets/images/quote640.jpg 640w,
                         assets/images/quote990.jpg 990w,
                         assets/images/quote1280.jpg 1280w,
@@ -87,9 +87,9 @@
             <!--assuming that page has 12 columns, this class takes the space of 4-->
             <!--start fresh with a small picture-->
             <picture>
-              <source sizes = "404px" srcset = "assets/images/run404.jpg 404w" media = "(min-width: 1020px)">  
-              <source sizes = "382px" srcset = "assets/images/run382.jpg 382w" media = "(min-width: 800px)">    
-              <img srcset = "assets/images/run800.jpg 800w, assets/images/run1600.jpg 1600w" alt ="small picture">  
+              <source sizes = "404px" data-srcset = "assets/images/run404.jpg 404w" media = "(min-width: 1020px)">  
+              <source sizes = "382px" data-srcset = "assets/images/run382.jpg 382w" media = "(min-width: 800px)">    
+              <img class = "lazyload" data-srcset = "assets/images/run800.jpg 800w, assets/images/run1600.jpg 1600w" alt ="small picture">  
             </picture>
           </div>
 
@@ -132,14 +132,14 @@
           </p>
           <!--insert images here-->
           <div class = "wrapper wrapper--medium wrapper--b-margin">
-           <img sizes = "(min-width: 970px) 976px, 100vx" srcset="
+           <img class = "lazyload" sizes = "(min-width: 970px) 976px, 100vx" data-srcset="
                         assets/images/Rplot400.jpg 400w,
                         assets/images/Rplot600.jpg 600w,
                         assets/images/Rplot800.jpg 800w,
                         assets/images/Rplot976.jpg 976w,
            " alt="Rplot.">
         </div>
-        <p>Poderá visualizar em: <a href="https://rpubs.com/havingitanalytics/676575">R publications by having it analytics</a></p>
+        <p>Poderá visualizar em: <a href="https://rpubs.com/havingitanalytics/682574">R publications by having it analytics</a></p>
        </div>
 
     <!--second item-->
@@ -150,7 +150,7 @@
               Para Lisboa existe portanto um rácio de <strong>+91 casos/dia</strong>. Como comparação, por exemplo para Setúbal houve +132 casos positivos, um rácio de +9.5 casos/dia.</p>
            <!--insert images here-->
            <div class = "wrapper wrapper--medium wrapper--b-margin">
-            <img sizes = "(min-width: 970px) 973px, 100vx" srcset="
+            <img class = "lazyload" sizes = "(min-width: 970px) 973px, 100vx" data-srcset="
                          assets/images/concelhos573.png 573w,
                          assets/images/concelhos973.png 973w,
             " alt="concelhos.">
@@ -163,7 +163,7 @@
              O número de internados em UCI também está a aumentar podendo nos próximos dias aproximar-se do máximo atingido em 7 de abril de 2020 (<strong>271</strong>)</p>
           <!--insert images here-->
           <div class = "wrapper wrapper--medium wrapper--b-margin">
-            <img sizes = "(min-width: 970px) 973px, 100vx" srcset="
+            <img class = "lazyload" sizes = "(min-width: 970px) 973px, 100vx" data-srcset="
                          assets/images/internados573.png 573w,
                          assets/images/internados973.png 973w,
             " alt="internamento.">
@@ -178,7 +178,7 @@
             Na tabela encontra-se o mesmo indicador para a Europa ordenado de forma decrescente.</p>
           <!--insert images here-->
           <div class = "wrapper wrapper--medium wrapper--b-margin">
-            <img sizes = "(min-width: 970px) 976px, 100vx" srcset="
+            <img class = "lazyload" sizes = "(min-width: 970px) 976px, 100vx" data-srcset="
                           assets/images/Europe565.jpg 565w,
                           assets/images/Europe768.jpg 768w,
                           assets/images/Europe976.jpg 976w,  
@@ -187,7 +187,7 @@
          </div>
 
          <div class = "wrapper wrapper--medium wrapper--b-margin">
-          <img sizes = "(min-width: 970px) 976px, 100vx" srcset="
+          <img class = "lazyload" sizes = "(min-width: 970px) 976px, 100vx" data-srcset="
                         assets/images/AML5out20565.jpg 565w,
                         assets/images/AML5out20976.jpg 976w,            
           " alt="AML5out20.">
@@ -209,34 +209,34 @@
       <div class = "row__large-4">
         <div class = "quote">
           <div class = "quote__photo">
-           <img src="assets/images/john_tukey.png">
+           <img class = "lazyload" sizes="160px" data-srcset="assets/images/john_tukey.png">
           </div>
          <h3 class = "quote__title">John Tukey</h3>
          <h4 class = "quote__subtitle">Mathematician</h4>
-         <p>John Tukey foi um matemático conhecido pelo desenvolvimento do algoritmo "Fast Fourier Transform", pelo gráfico tipo "box plot" e autor do livro "Exploratory Data Analysis". Citação conhecida: <i><strong>&ldquo;Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise&rdquo;.</i></strong></p>
+         <p>John Tukey foi um matemático conhecido pelo desenvolvimento do algoritmo "Fast Fourier Transform", pelo gráfico tipo "box plot" e autor do livro "Exploratory Data Analysis". <br><u>Citação conhecida</u>: <strong>&ldquo;Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise&rdquo;.</strong></br></p>
         </div>
        </div>
 
       <div class = "row__large-4">
         <div class = "quote">
           <div class = "quote__photo">
-            <img src="assets/images/nicolas.jpg">
+            <img class = "lazyload" sizes="160px" data-srcset="assets/images/nicolas.jpg">
           </div>
         <h3 class="quote__title">Nicolas Gallagher</h3>
         <h4 class ="quote__subtitle">Software Developer</h4>
-        <p>Nicolas Gallagher é o criador do <strong>Normalize.css</strong>, uma alternativa moderna ao CSS. Citação conhecida sobre desenvolvimenro web: <i><strong>&ldquo;Class names cannot be unsemantic. They have to be a hook for CSS and Javascript and should communicate useful information to developers&rdquo;.</i></strong>
-        Para consulta das <strong>melhores práticas em arquitectura front-end</strong> clique <a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">(aqui)</a></p>
+        <p>Nicolas Gallagher é o criador do <strong>Normalize.css</strong>, uma alternativa moderna ao CSS. <br><u>Citação conhecida</u>: <strong>&ldquo;Class names cannot be unsemantic. They have to be a hook for CSS, JavaScript and should communicate useful information to developers&rdquo;.</strong>
+        Para consulta das melhores práticas de semântica na arquitectura front-end de páginas Web clique <a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">(aqui)</a></br></p>
        </div>
       </div>
 
       <div class = "row__large-4">
         <div class = "quote quote--last">
           <div class = "quote__photo">
-           <img src="assets/images/andrew.jpg">
+           <img class = "lazyload" sizes="160px" data-srcset="assets/images/andrew.jpg">
           </div>
         <h3 class="quote__title">Andrew Ng</h3>
         <h4 class ="quote__subtitle">Computer Scientist</h4>
-        <p>Andrew Ng é um instrutor conhecido de vários cursos online em Inteligência Artificial e Machine Learning. Deixamos aqui uma das suas citações: <i><strong>&ldquo;As leaders, it is incumbent on all of us to make sure we are building a world in which every individual has an opportunity to thrive. Understanding what AI can do and how it fits into your strategy is the beginning, not the end, of that process.&rdquo;.</i></strong></p>
+        <p>Andrew Ng é um instrutor conhecido de vários cursos online em Inteligência Artificial e Machine Learning. <br><u>Citação conhecida</u>: <strong>&ldquo;As leaders, it is incumbent on all of us to make sure we are building a world in which every individual has an opportunity to thrive. Understanding what AI can do and how it fits into your strategy is the beginning, not the end, of that process.&rdquo;.</strong></br></p>
        </div>
       </div>
 

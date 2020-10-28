@@ -1,4 +1,5 @@
 import '../styles/styles.css'
+import 'lazysizes'  /*to apply Lazy Loading Images to increase Page Speed*/
 import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
